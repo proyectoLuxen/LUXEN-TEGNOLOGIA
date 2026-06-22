@@ -1,0 +1,447 @@
+[
+  {
+    "id": "audifonos-xiaomi-tws-7-negros-sweat-proof",
+    "nombre": "Audífonos Xiaomi TWS-7 Negros Sweat Proof con Estuche de Carga",
+    "marca": "Xiaomi",
+    "categoria": "Audio inalámbrico",
+    "precio": 999,
+    "moneda": "MXN",
+    "precioTexto": "$999.00 MXN",
+    "descripcionCorta": "Audífonos inalámbricos TWS en color negro con estuche de carga para uso cotidiano.",
+    "descripcionLarga": "Audífonos inalámbricos Xiaomi TWS-7 en color negro, con estuche de carga para resguardo y recarga. Su formato True Wireless Stereo (TWS) elimina los cables entre ambos auriculares y facilita el uso cotidiano en reproducción de música, videos y contenido multimedia desde dispositivos compatibles.",
+    "caracteristicas": [
+      "Tecnología inalámbrica TWS para una experiencia sin cables entre los auriculares.",
+      "Estuche de carga incluido para almacenamiento y recarga.",
+      "Presentación en color negro.",
+      "Diseño Sweat Proof orientado a un uso dinámico y actividades cotidianas."
+    ],
+    "fichaTecnica": {
+      "Marca": "Xiaomi",
+      "Línea / modelo comercial": "TWS-7",
+      "Tipo de producto": "Audífonos inalámbricos",
+      "Conectividad": "Bluetooth con tecnología TWS",
+      "Color": "Negro",
+      "Estuche de carga": "Incluido",
+      "Uso recomendado": "Entretenimiento, música y actividades cotidianas",
+      "Resistencia indicada": "Sweat Proof"
+    },
+    "incluye": [
+      "1 par de audífonos TWS-7",
+      "Estuche de carga"
+    ],
+    "estadoProducto": "nuevo",
+    "disponibilidad": "disponible",
+    "stockTexto": "Disponible. Confirma existencia antes de pagar.",
+    "garantia": "",
+    "imagenes": [
+      {
+        "src": "assets/images/productos/xiaomi-tws-7-01.webp",
+        "alt": "Audífonos Xiaomi TWS-7 negros con estuche de carga"
+      },
+      {
+        "src": "assets/images/productos/xiaomi-tws-7-02.webp",
+        "alt": "Audífonos Xiaomi TWS-7 dentro del estuche abierto"
+      },
+      {
+        "src": "assets/images/productos/xiaomi-tws-7-03.webp",
+        "alt": "Empaque de audífonos Xiaomi TWS-7"
+      },
+      {
+        "src": "assets/images/productos/xiaomi-tws-7-04.webp",
+        "alt": "Empaque frontal de audífonos Xiaomi TWS-7"
+      }
+    ],
+    "imagenPrincipal": "assets/images/productos/xiaomi-tws-7-01.webp",
+    "whatsappTexto": "Hola, quiero comprar el producto: Audífonos Xiaomi TWS-7 Negros Sweat Proof con Estuche de Carga. ¿Está disponible?",
+    "linkMercadoPago": "",
+    "linkMercadoLibre": "https://www.mercadolibre.com.mx/audifonos-xiaomi-tws7-negros-sweat-proof-con-estuche-carga/up/MLMU4128158108?pdp_filters=item_id%3AMLM3026237147&matt_tool=17030900&ua=GTCAYiZAUMN06IgGMIxifP_mlsvwWbcnWsbq_7YIgvE_YvNE#origin=share&sid=share&wid=MLM3026237147&action=copy",
+    "ventaDirectaHabilitada": false,
+    "destacado": false,
+    "orden": 1
+  },
+  {
+    "id": "audifonos-samsung-tws-7-negros",
+    "nombre": "Audífonos Samsung TWS-7 Negros",
+    "marca": "Samsung",
+    "categoria": "Audio inalámbrico",
+    "precio": 999,
+    "moneda": "MXN",
+    "precioTexto": "$999.00 MXN",
+    "descripcionCorta": "Audífonos inalámbricos TWS compactos en color negro para audio móvil.",
+    "descripcionLarga": "Audífonos inalámbricos Samsung TWS-7 en color negro, diseñados para brindar libertad de movimiento y una experiencia de audio práctica desde equipos compatibles. Su configuración TWS permite utilizar ambos auriculares sin conexión física entre ellos, en una presentación compacta para uso diario.",
+    "caracteristicas": [
+      "Tecnología True Wireless Stereo (TWS) para conexión inalámbrica entre ambos auriculares.",
+      "Conectividad Bluetooth con dispositivos compatibles.",
+      "Presentación compacta en color negro.",
+      "Diseño adecuado para entretenimiento y reproducción de audio móvil."
+    ],
+    "fichaTecnica": {
+      "Marca": "Samsung",
+      "Línea / modelo comercial": "TWS-7",
+      "Tipo de producto": "Audífonos inalámbricos",
+      "Conectividad": "Bluetooth con tecnología TWS",
+      "Color": "Negro",
+      "Formato de uso": "Estéreo inalámbrico",
+      "Uso recomendado": "Música, videos y entretenimiento"
+    },
+    "incluye": [
+      "1 par de audífonos Samsung TWS-7"
+    ],
+    "estadoProducto": "nuevo",
+    "disponibilidad": "disponible",
+    "stockTexto": "Disponible. Confirma existencia antes de pagar.",
+    "garantia": "",
+    "imagenes": [
+      {
+        "src": "assets/images/productos/samsung-tws-7-01.webp",
+        "alt": "Audífonos Samsung TWS-7 con empaque"
+      },
+      {
+        "src": "assets/images/productos/samsung-tws-7-02.webp",
+        "alt": "Empaque frontal de audífonos Samsung TWS-7"
+      },
+      {
+        "src": "assets/images/productos/samsung-tws-7-03.webp",
+        "alt": "Audífonos Samsung TWS-7 fuera del estuche"
+      },
+      {
+        "src": "assets/images/productos/samsung-tws-7-04.webp",
+        "alt": "Audífonos Samsung TWS-7 dentro del estuche"
+      },
+      {
+        "src": "assets/images/productos/samsung-tws-7-05.webp",
+        "alt": "Audífonos Samsung TWS-7 con accesorios"
+      }
+    ],
+    "imagenPrincipal": "assets/images/productos/samsung-tws-7-01.webp",
+    "whatsappTexto": "Hola, quiero comprar el producto: Audífonos Samsung TWS-7 Negros. ¿Está disponible?",
+    "linkMercadoPago": "",
+    "linkMercadoLibre": "https://www.mercadolibre.com.mx/auricular-samsung-tws7-negro/p/MLM48721177?pdp_filters=item_id%3AMLM2926622733&matt_tool=17030900&ua=EN_iNPLwKH4ZsvDLH0kbtuL1cz3rPGhCHvwX6Eh7PpCQEvA-#origin=share&sid=share&wid=MLM2926622733&action=copy",
+    "ventaDirectaHabilitada": false,
+    "destacado": false,
+    "orden": 2
+  },
+  {
+    "id": "skullcandy-tws-7-super-bass-sweatproof",
+    "nombre": "Skullcandy TWS-7 Super Bass Sweatproof con Estuche de Carga, Negro",
+    "marca": "Skullcandy",
+    "categoria": "Audio inalámbrico",
+    "precio": 999,
+    "moneda": "MXN",
+    "precioTexto": "$999.00 MXN",
+    "descripcionCorta": "Audífonos in-ear TWS con micrófono, controles y estuche de carga.",
+    "descripcionLarga": "Los audífonos Skullcandy Indy Fuel integran un formato intraaural con tecnología True Wireless (TWS) y conectividad Bluetooth. Están diseñados para acompañar actividades cotidianas, entretenimiento y ejercicio, con geles de estabilidad para un ajuste más firme. Incorporan micrófono para llamadas, controles de reproducción y estuche de carga con compatibilidad de carga inalámbrica.",
+    "caracteristicas": [
+      "Formato in-ear con conectividad Bluetooth y tecnología True Wireless (TWS).",
+      "Clasificación IP55: resistencia al polvo y al agua; no son sumergibles.",
+      "Micrófono integrado, modo manos libres y controles de reproducción y llamadas.",
+      "Estuche de carga incluido con compatibilidad de carga inalámbrica.",
+      "Perfil de graves Super Bass y geles de estabilidad para un ajuste más seguro."
+    ],
+    "fichaTecnica": {
+      "Marca": "Skullcandy",
+      "Modelo": "Indy Fuel",
+      "Modelo alfanumérico": "S2IFW-N740",
+      "Formato": "In-ear / intraaural",
+      "Conectividad": "Bluetooth inalámbrico con tecnología TWS",
+      "Micrófono y llamadas": "Micrófono integrado y modo manos libres",
+      "Controles": "Reproducción y control de llamadas",
+      "Resistencia": "IP55; resistente al polvo y al agua, no sumergible",
+      "Cancelación de ruido": "No",
+      "Estuche de carga": "Sí, con carga inalámbrica"
+    },
+    "incluye": [
+      "1 par de audífonos Skullcandy Indy Fuel",
+      "Estuche de carga",
+      "Cable de carga micro-USB",
+      "Almohadillas (ear pads)",
+      "Geles de estabilidad",
+      "Guía de inicio"
+    ],
+    "estadoProducto": "nuevo",
+    "disponibilidad": "disponible",
+    "stockTexto": "Disponible. Confirma existencia antes de pagar.",
+    "garantia": "",
+    "imagenes": [
+      {
+        "src": "assets/images/productos/skullcandy-indy-fuel-01.webp",
+        "alt": "Audífonos Skullcandy Indy Fuel con estuche y empaque"
+      },
+      {
+        "src": "assets/images/productos/skullcandy-indy-fuel-02.webp",
+        "alt": "Audífonos Skullcandy con accesorios sobre escritorio"
+      }
+    ],
+    "imagenPrincipal": "assets/images/productos/skullcandy-indy-fuel-01.webp",
+    "whatsappTexto": "Hola, quiero comprar el producto: Skullcandy TWS-7 Super Bass Sweatproof con Estuche de Carga, Negro. ¿Está disponible?",
+    "linkMercadoPago": "",
+    "linkMercadoLibre": "https://www.mercadolibre.com.mx/skullcandy-tws-7-super-bass-sweatproof-con-estuche-de-carga-negro/p/MLM68387508?pdp_filters=item_id%3AMLM5225507892&matt_tool=17030900&ua=0UK5eyV_pY8yUfmrSE7MbCxOHbJBp6Y-nZq49WaNvmwd1f8j#origin=share&sid=share&wid=MLM5225507892&action=copy",
+    "ventaDirectaHabilitada": false,
+    "destacado": false,
+    "orden": 3
+  },
+  {
+    "id": "cargador-apple-original-35w-doble-usbc",
+    "nombre": "Cargador Apple Original 35 W con Doble Puerto USB-C, Blanco",
+    "marca": "Apple",
+    "categoria": "Carga y conectividad",
+    "precio": 976,
+    "moneda": "MXN",
+    "precioTexto": "$976.00 MXN",
+    "descripcionCorta": "Adaptador de corriente Apple de 35 W con dos puertos USB-C.",
+    "descripcionLarga": "Adaptador de corriente Apple de 35 W en color blanco con dos puertos USB-C. Permite cargar hasta dos dispositivos al mismo tiempo, por lo que resulta práctico para espacios de trabajo, viajes y uso doméstico. Es compatible con equipos Apple que utilizan carga USB-C, incluyendo iPhone, iPad, Apple Watch, AirPods y MacBook Air compatibles.",
+    "caracteristicas": [
+      "Potencia total de salida de 35 W.",
+      "Dos puertos USB-C para cargar hasta dos dispositivos simultáneamente.",
+      "Diseño compacto en color blanco para uso en casa, oficina o viaje.",
+      "Compatible con dispositivos Apple que admiten carga mediante USB-C."
+    ],
+    "fichaTecnica": {
+      "Marca": "Apple",
+      "Tipo de producto": "Adaptador de corriente",
+      "Potencia": "35 W",
+      "Puertos": "2 puertos USB-C",
+      "Color": "Blanco",
+      "Carga simultánea": "Hasta 2 dispositivos",
+      "Compatibilidad": "iPhone, iPad, Apple Watch, AirPods y MacBook Air compatibles",
+      "Cable de carga": "No incluido"
+    },
+    "incluye": [
+      "1 adaptador de corriente Apple de 35 W con doble puerto USB-C"
+    ],
+    "estadoProducto": "nuevo",
+    "disponibilidad": "disponible",
+    "stockTexto": "Disponible. Confirma existencia antes de pagar.",
+    "garantia": "",
+    "imagenes": [
+      {
+        "src": "assets/images/productos/cargador-apple-35w-doble-usbc-01.webp",
+        "alt": "Cargador Apple de 35 W con doble puerto USB-C"
+      }
+    ],
+    "imagenPrincipal": "assets/images/productos/cargador-apple-35w-doble-usbc-01.webp",
+    "whatsappTexto": "Hola, quiero comprar el producto: Cargador Apple Original 35 W con Doble Puerto USB-C, Blanco. ¿Está disponible?",
+    "linkMercadoPago": "",
+    "linkMercadoLibre": "https://www.mercadolibre.com.mx/cargador-apple-35w-doble-puerto-usbc-original/up/MLMU3830355610?pdp_filters=item_id%3AMLM4950549152&matt_tool=17030900&ua=Wnpk3nn4V6kfcffMOw4xsBpWRlBW33CE8HB3SCkrRuzFZDzx#origin=share&sid=share&wid=MLM4950549152&action=copy",
+    "ventaDirectaHabilitada": false,
+    "destacado": false,
+    "orden": 4
+  },
+  {
+    "id": "cargador-apple-35w-iphone-14-pro-max-14-plus",
+    "nombre": "Cargador Apple 35 W Doble USB-C para iPhone 14 Pro Max y 14 Plus, Blanco",
+    "marca": "Apple",
+    "categoria": "Carga y conectividad",
+    "precio": 976,
+    "moneda": "MXN",
+    "precioTexto": "$976.00 MXN",
+    "descripcionCorta": "Cargador Apple de 35 W con doble puerto USB-C en color blanco.",
+    "descripcionLarga": "Cargador Apple de 35 W con doble puerto USB-C, presentado en color blanco y adecuado para usuarios de iPhone 14 Pro Max y iPhone 14 Plus mediante un cable USB-C a Lightning compatible. Su doble conexión permite atender la carga de dos dispositivos a la vez, manteniendo una solución práctica para el hogar, oficina o traslado.",
+    "caracteristicas": [
+      "Potencia total de 35 W con dos puertos USB-C.",
+      "Permite cargar hasta dos dispositivos de manera simultánea.",
+      "Compatible con iPhone 14 Pro Max y iPhone 14 Plus mediante cable USB-C a Lightning.",
+      "También compatible con iPad, Apple Watch, AirPods y equipos Apple USB-C compatibles."
+    ],
+    "fichaTecnica": {
+      "Marca": "Apple",
+      "Tipo de producto": "Adaptador de corriente",
+      "Potencia": "35 W",
+      "Puertos": "2 puertos USB-C",
+      "Color": "Blanco",
+      "Compatibilidad destacada": "iPhone 14 Pro Max y iPhone 14 Plus con cable USB-C a Lightning",
+      "Carga simultánea": "Hasta 2 dispositivos",
+      "Cable de carga": "No incluido"
+    },
+    "incluye": [
+      "1 adaptador de corriente Apple de 35 W con doble puerto USB-C"
+    ],
+    "estadoProducto": "nuevo",
+    "disponibilidad": "disponible",
+    "stockTexto": "Disponible. Confirma existencia antes de pagar.",
+    "garantia": "",
+    "imagenes": [
+      {
+        "src": "assets/images/productos/cargador-apple-35w-doble-usbc-01.webp",
+        "alt": "Cargador Apple de 35 W con doble puerto USB-C en color blanco"
+      }
+    ],
+    "imagenPrincipal": "assets/images/productos/cargador-apple-35w-doble-usbc-01.webp",
+    "whatsappTexto": "Hola, quiero comprar el producto: Cargador Apple 35 W Doble USB-C para iPhone 14 Pro Max y 14 Plus, Blanco. ¿Está disponible?",
+    "linkMercadoPago": "",
+    "linkMercadoLibre": "https://www.mercadolibre.com.mx/cargador-apple-iphone-14-pro-max-14-plus-35w-doble-tipo-c/p/MLM22521287?pdp_filters=item_id%3AMLM5291619202&matt_tool=17030900&ua=RPc44pLfqOoDQHt9L0NdgxSXcmGryfkz0t3IKhljO-qNMkEi#origin=share&sid=share&wid=MLM5291619202&action=copy",
+    "ventaDirectaHabilitada": false,
+    "destacado": false,
+    "orden": 5
+  },
+  {
+    "id": "jbl-tws-7-super-bass-sweatproof-sports",
+    "nombre": "JBL TWS-7 Super Bass Sweatproof Sports con Estuche de Carga, Negro",
+    "marca": "JBL",
+    "categoria": "Audio inalámbrico",
+    "precio": 999,
+    "moneda": "MXN",
+    "precioTexto": "$999.00 MXN",
+    "descripcionCorta": "Audífonos JBL TWS-7 Super Bass con estuche de carga y formato sports.",
+    "descripcionLarga": "Audífonos JBL TWS-7 Super Bass en color negro, con estuche de carga y formato inalámbrico True Wireless Stereo (TWS). Su presentación Sports y Sweatproof está orientada a quienes buscan un accesorio práctico para audio personal, entretenimiento y actividades de movimiento, con énfasis en un perfil de graves Super Bass.",
+    "caracteristicas": [
+      "Tecnología inalámbrica TWS para uso sin cables entre ambos auriculares.",
+      "Estuche de carga incluido para almacenamiento y recarga.",
+      "Perfil de audio Super Bass.",
+      "Presentación Sports y Sweatproof para un uso activo.",
+      "Color negro."
+    ],
+    "fichaTecnica": {
+      "Marca": "JBL",
+      "Línea / modelo comercial": "TWS-7 Super Bass",
+      "Tipo de producto": "Audífonos inalámbricos",
+      "Conectividad": "Bluetooth con tecnología TWS",
+      "Color": "Negro",
+      "Estuche de carga": "Incluido",
+      "Perfil de audio": "Super Bass",
+      "Diseño": "Sports / Sweatproof"
+    },
+    "incluye": [
+      "1 par de audífonos JBL TWS-7",
+      "Estuche de carga"
+    ],
+    "estadoProducto": "nuevo",
+    "disponibilidad": "disponible",
+    "stockTexto": "Disponible. Confirma existencia antes de pagar.",
+    "garantia": "",
+    "imagenes": [
+      {
+        "src": "assets/images/productos/jbl-tws-7-01.webp",
+        "alt": "Audífonos JBL TWS-7 con caja"
+      },
+      {
+        "src": "assets/images/productos/jbl-tws-7-02.webp",
+        "alt": "Audífonos JBL TWS-7 con empaque y accesorios"
+      },
+      {
+        "src": "assets/images/productos/jbl-tws-7-03.webp",
+        "alt": "Audífonos JBL TWS-7 con cable de carga"
+      },
+      {
+        "src": "assets/images/productos/jbl-tws-7-04.webp",
+        "alt": "Audífonos JBL TWS-7 dentro del estuche"
+      },
+      {
+        "src": "assets/images/productos/jbl-tws-7-05.webp",
+        "alt": "Audífonos JBL TWS-7 frente al estuche"
+      },
+      {
+        "src": "assets/images/productos/jbl-tws-7-06.webp",
+        "alt": "Composición de audífonos JBL TWS-7, empaque y accesorios"
+      }
+    ],
+    "imagenPrincipal": "assets/images/productos/jbl-tws-7-01.webp",
+    "whatsappTexto": "Hola, quiero comprar el producto: JBL TWS-7 Super Bass Sweatproof Sports con Estuche de Carga, Negro. ¿Está disponible?",
+    "linkMercadoPago": "",
+    "linkMercadoLibre": "https://articulo.mercadolibre.com.mx/MLM-5332304818-jbl-tws-7-super-bass-sweatproof-con-estuche-de-carga-sports-negro-_JM",
+    "ventaDirectaHabilitada": false,
+    "destacado": false,
+    "orden": 6
+  },
+  {
+    "id": "cargador-apple-35w-doble-usbc-cable-tipo-c",
+    "nombre": "Cargador Apple 35 W Doble USB-C con Cable Tipo C, Blanco",
+    "marca": "Apple",
+    "categoria": "Carga y conectividad",
+    "precio": 1270,
+    "moneda": "MXN",
+    "precioTexto": "$1,270.00 MXN",
+    "descripcionCorta": "Kit de carga con adaptador Apple de 35 W y cable Tipo C.",
+    "descripcionLarga": "Solución de carga Apple en color blanco, integrada por un adaptador de corriente de 35 W con dos puertos USB-C y cable Tipo C. Permite cargar hasta dos dispositivos simultáneamente y ofrece una configuración funcional para equipos compatibles con USB-C en espacios de trabajo, hogar o traslado.",
+    "caracteristicas": [
+      "Adaptador de corriente de 35 W con dos puertos USB-C.",
+      "Incluye cable Tipo C conforme a la presentación comercial.",
+      "Permite la carga de hasta dos dispositivos de forma simultánea.",
+      "Diseño blanco, compacto y adecuado para dispositivos compatibles con USB-C."
+    ],
+    "fichaTecnica": {
+      "Marca": "Apple",
+      "Tipo de producto": "Adaptador de corriente con cable Tipo C",
+      "Potencia": "35 W",
+      "Puertos": "2 puertos USB-C",
+      "Color": "Blanco",
+      "Cable incluido": "Cable Tipo C",
+      "Carga simultánea": "Hasta 2 dispositivos",
+      "Compatibilidad": "Dispositivos compatibles con USB-C"
+    },
+    "incluye": [
+      "1 adaptador de corriente Apple de 35 W con doble puerto USB-C",
+      "1 cable Tipo C"
+    ],
+    "estadoProducto": "nuevo",
+    "disponibilidad": "disponible",
+    "stockTexto": "Disponible. Confirma existencia antes de pagar.",
+    "garantia": "",
+    "imagenes": [
+      {
+        "src": "assets/images/productos/kit-cargador-cable-01.webp",
+        "alt": "Cargador Apple de 35 W con cable Tipo C"
+      },
+      {
+        "src": "assets/images/productos/kit-cargador-cable-02.webp",
+        "alt": "Pack de cargador y cable sobre escritorio"
+      }
+    ],
+    "imagenPrincipal": "assets/images/productos/kit-cargador-cable-01.webp",
+    "whatsappTexto": "Hola, quiero comprar el producto: Cargador Apple 35 W Doble USB-C con Cable Tipo C, Blanco. ¿Está disponible?",
+    "linkMercadoPago": "",
+    "linkMercadoLibre": "https://articulo.mercadolibre.com.mx/MLM-4545438972-cargador-apple-35w-doble-usb-c-carga-rapida-cable-tipo-c-blanco-_JM",
+    "ventaDirectaHabilitada": false,
+    "destacado": false,
+    "orden": 7
+  },
+  {
+    "id": "cable-apple-usb-c-lightning-1m-blanco",
+    "nombre": "Cable Apple USB-C a Lightning, 1 m, Blanco",
+    "marca": "Apple",
+    "categoria": "Carga y conectividad",
+    "precio": 590,
+    "moneda": "MXN",
+    "precioTexto": "$590.00 MXN",
+    "descripcionCorta": "Cable USB-C a Lightning de 1 metro para carga y sincronización.",
+    "descripcionLarga": "Cable Apple USB-C a Lightning de 1 metro en color blanco, diseñado para carga y sincronización de equipos con conector Lightning. Permite conectar un iPhone, iPad o dispositivo compatible a un puerto USB-C o Thunderbolt 3 (USB-C) de una computadora, así como a un adaptador de corriente USB-C compatible.",
+    "caracteristicas": [
+      "Conectores USB-C y Lightning.",
+      "Longitud de 1 metro.",
+      "Permite carga y sincronización de dispositivos compatibles.",
+      "Compatible con adaptadores Apple USB-C para funciones de carga rápida en modelos de iPhone y iPad compatibles.",
+      "Presentación en color blanco."
+    ],
+    "fichaTecnica": {
+      "Marca": "Apple",
+      "Tipo de producto": "Cable de carga y sincronización",
+      "Conectores": "USB-C a Lightning",
+      "Longitud": "1 m",
+      "Color": "Blanco",
+      "Funciones": "Carga y sincronización",
+      "Compatibilidad": "Dispositivos Apple con conector Lightning",
+      "Carga rápida": "Disponible en equipos compatibles con adaptador USB-C adecuado"
+    },
+    "incluye": [
+      "1 cable Apple USB-C a Lightning de 1 metro"
+    ],
+    "estadoProducto": "nuevo",
+    "disponibilidad": "disponible",
+    "stockTexto": "Disponible. Confirma existencia antes de pagar.",
+    "garantia": "",
+    "imagenes": [
+      {
+        "src": "assets/images/productos/cable-usbc-lightning-01.webp",
+        "alt": "Cable Apple USB-C a Lightning de 1 metro"
+      }
+    ],
+    "imagenPrincipal": "assets/images/productos/cable-usbc-lightning-01.webp",
+    "whatsappTexto": "Hola, quiero comprar el producto: Cable Apple USB-C a Lightning, 1 m, Blanco. ¿Está disponible?",
+    "linkMercadoPago": "",
+    "linkMercadoLibre": "",
+    "ventaDirectaHabilitada": false,
+    "destacado": false,
+    "orden": 8,
+    "notaInterna": "PENDIENTE_DEFINIR: el documento fuente repite para este cable el mismo enlace de Mercado Libre del kit de cargador con cable. Confirmar enlace correcto antes de mostrarlo."
+  }
+]
