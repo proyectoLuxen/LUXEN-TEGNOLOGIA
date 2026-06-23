@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="es-MX">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Videos y preguntas frecuentes | LUXEN TECNOLOGÍA</title>
+    <meta name="description" content="Videos de LUXEN TECNOLOGÍA, respuestas frecuentes y espacio para enviar preguntas sobre productos, mayoreo y servicios técnicos.">
+    <meta property="og:title" content="Videos y preguntas frecuentes | LUXEN TECNOLOGÍA">
+    <meta property="og:description" content="Aprende, consulta dudas y envia preguntas sobre tecnología, productos y soporte técnico.">
+    <meta property="og:image" content="assets/images/productos/hero-productos.webp">
+    <meta property="og:type" content="website">
+    <link rel="icon" href="assets/images/logos/favicon.png">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/data-inline.js" defer></script>
+    <script src="js/main.js" defer></script>
+    <script src="js/videos.js" defer></script>
+  </head>
+  <body data-page="videos">
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+    <header id="site-header" class="site-header"></header>
+
+    <main id="contenido" class="page-main">
+      <section class="video-hero" aria-labelledby="video-title">
+        <div class="section-inner video-hero__grid">
+          <div class="video-hero__copy">
+            <span class="eyebrow">Canal de YouTube</span>
+            <h1 id="video-title">Videos, guías y respuestas de tecnología</h1>
+            <p>Contenido para resolver dudas antes de comprar, cotizar por mayoreo o solicitar soporte técnico.</p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#video-principal">Ver video</a>
+              <a class="button button-ghost" href="#preguntas">Preguntar algo</a>
+            </div>
+          </div>
+          <div id="video-principal" class="youtube-feature" aria-label="Video principal de YouTube">
+            <a class="youtube-thumb" href="https://youtu.be/3UrWzc8OV8I" target="_blank" rel="noopener noreferrer" aria-label="Abrir video destacado en YouTube">
+              <img src="https://i.ytimg.com/vi/3UrWzc8OV8I/hqdefault.jpg" alt="Miniatura del video destacado de LUXEN TECNOLOGÍA en YouTube" loading="lazy">
+              <span class="youtube-play" aria-hidden="true"></span>
+              <span class="youtube-thumb__label">Ver en YouTube</span>
+            </a>
+            <div class="youtube-feature__meta">
+              <span class="status-pill is-available">Nuevo contenido</span>
+              <strong>Video destacado del canal</strong>
+              <a class="button button-muted" href="https://youtu.be/3UrWzc8OV8I" target="_blank" rel="noopener noreferrer">Abrir en YouTube</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-section">
+        <div class="section-heading">
+          <span class="eyebrow">Blog práctico</span>
+          <h2>Temas para aprender y decidir mejor</h2>
+          <p>Publicaciones cortas pensadas para clientes, negocios y personas que quieren comprar con más claridad.</p>
+        </div>
+        <div class="blog-grid">
+          <article class="blog-card">
+            <span class="blog-card__tag">Compra inteligente</span>
+            <h3>Antes de comprar accesorios tecnológicos</h3>
+            <p>Revisa compatibilidad, tipo de conector, uso principal y disponibilidad antes de pagar.</p>
+          </article>
+          <article class="blog-card">
+            <span class="blog-card__tag">Mayoreo</span>
+            <h3>Cómo pedir una cotización por volumen</h3>
+            <p>Comparte producto, cantidad aproximada, ciudad de entrega y fecha en la que lo necesitas.</p>
+          </article>
+          <article class="blog-card">
+            <span class="blog-card__tag">Soporte</span>
+            <h3>Cuando conviene revisar tu equipo</h3>
+            <p>Si tu computadora está lenta, se calienta o muestra errores, una revisión inicial ayuda a orientar el siguiente paso.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="preguntas" class="content-section faq-layout">
+        <div class="faq-column">
+          <div class="section-heading">
+            <span class="eyebrow">Preguntas frecuentes</span>
+            <h2>Dudas rápidas antes de contactarnos</h2>
+          </div>
+          <div class="faq-list">
+            <details class="faq-item" open>
+              <summary>¿Puedo comprar directamente desde la página?</summary>
+              <p>La página funciona como catálogo. La compra se confirma por WhatsApp o mediante enlaces externos disponibles.</p>
+            </details>
+            <details class="faq-item">
+              <summary>¿Tienen precios por mayoreo?</summary>
+              <p>Sí. El precio por volumen se cotiza por WhatsApp según producto, cantidad y disponibilidad.</p>
+            </details>
+            <details class="faq-item">
+              <summary>¿Puedo pedir ayuda para elegir un producto compatible?</summary>
+              <p>Sí. Comparte modelo de equipo, uso esperado y dudas principales para recibir orientación antes de comprar.</p>
+            </details>
+            <details class="faq-item">
+              <summary>¿Atienden servicios técnicos?</summary>
+              <p>Sí. Hay atención para diagnóstico, mantenimiento, software y hardware, de acuerdo con el equipo y disponibilidad.</p>
+            </details>
+            <details class="faq-item">
+              <summary>¿Publicarán más videos?</summary>
+              <p>La sección esta preparada para crecer con videos, guías y respuestas frecuentes del canal.</p>
+            </details>
+          </div>
+        </div>
+
+        <aside class="question-panel">
+          <span class="eyebrow">Tu pregunta</span>
+          <h2>Deja tu duda para responderla</h2>
+          <p>Envía tu pregunta y podremos atenderla por WhatsApp o convertirla en una respuesta pública cuando aplique.</p>
+          <form id="question-form" class="question-form">
+            <label>
+              Tema
+              <select id="question-topic" name="topic">
+                <option value="Productos">Productos</option>
+                <option value="Mayoreo">Mayoreo</option>
+                <option value="Servicios tecnicos">Servicios tecnicos</option>
+                <option value="Videos de YouTube">Videos de YouTube</option>
+              </select>
+            </label>
+            <label>
+              Nombre opcional
+              <input id="question-name" name="name" type="text" autocomplete="name" placeholder="Tu nombre">
+            </label>
+            <label>
+              Pregunta
+              <textarea id="question-text" name="question" rows="5" required placeholder="Escribe tu pregunta aquí"></textarea>
+            </label>
+            <button class="button button-primary" type="submit">Enviar pregunta por WhatsApp</button>
+            <p id="question-feedback" class="form-feedback" aria-live="polite"></p>
+          </form>
+        </aside>
+      </section>
+    </main>
+
+    <footer id="site-footer" class="site-footer"></footer>
+  </body>
+</html>

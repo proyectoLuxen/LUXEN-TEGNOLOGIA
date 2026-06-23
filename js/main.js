@@ -98,6 +98,16 @@
     return `https://wa.me/${site.whatsappNumero}?text=${encodeURIComponent(text)}`;
   }
 
+  function isValidHttpUrl(value) {
+    if (!isDefined(value)) return false;
+    try {
+      const url = new URL(value);
+      return url.protocol === 'https:' || url.protocol === 'http:';
+    } catch (error) {
+      return false;
+    }
+  }
+
   function externalAttrs() {
     return 'target="_blank" rel="noopener noreferrer"';
   }
@@ -110,26 +120,69 @@
     return `producto.html?id=${encodeURIComponent(product.id)}`;
   }
 
+  function hasWholesale(product) {
+    return product.mayoreoDisponible === true;
+  }
+
+  function wholesaleText(product) {
+    if (!hasWholesale(product)) return '';
+    if (isDefined(product.precioMayoreo)) {
+      return `Precio por volumen: ${product.precioMayoreo}`;
+    }
+    if (Number.isFinite(product.cantidadMinimaMayoreo)) {
+      return `Precio especial a partir de ${product.cantidadMinimaMayoreo} piezas.`;
+    }
+    return product.mensajeMayoreo || 'Solicita precio por mayoreo';
+  }
+
+  function wholesaleMessage(product) {
+    return product.whatsappTextoMayoreo || `Hola, me interesa comprar ${product.nombre} por mayoreo.
+
+Cantidad aproximada:
+Ciudad de entrega:
+¿Me puedes compartir precio por volumen, disponibilidad y tiempo de entrega?`;
+  }
+
+  function wholesaleUrl(product, site) {
+    if (!hasWholesale(product)) return '';
+    return whatsappUrl(site, wholesaleMessage(product));
+  }
+
+  function wholesaleBadge(product) {
+    if (!hasWholesale(product)) return '';
+    return `
+      <div class="wholesale-badge">
+        <strong>Mayoreo disponible</strong>
+        <span>${escapeHTML(wholesaleText(product))}</span>
+      </div>
+    `;
+  }
+
   function actionButtons(product, site, options = {}) {
     const compact = options.compact;
     const wpHref = whatsappUrl(site, product.whatsappTexto);
     const disabled = product.disponibilidad === 'agotado';
+    const wholesaleHref = wholesaleUrl(product, site);
     const parts = [];
-
-    if (wpHref) {
-      parts.push(`<a class="button button-primary" href="${encodeAttribute(wpHref)}" ${externalAttrs()}>Comprar por WhatsApp</a>`);
-    }
-
-    if (product.linkMercadoPago && !disabled) {
-      parts.push(`<a class="button button-secondary" href="${encodeAttribute(product.linkMercadoPago)}" ${externalAttrs()}>Pagar con Mercado Pago</a>`);
-    }
-
-    if (product.linkMercadoLibre) {
-      parts.push(`<a class="button button-muted" href="${encodeAttribute(product.linkMercadoLibre)}" ${externalAttrs()}>Ver en Mercado Libre</a>`);
-    }
 
     if (compact) {
       parts.push(`<a class="button button-ghost" href="${productUrl(product)}">Ver detalles</a>`);
+    }
+
+    if (wpHref) {
+      parts.push(`<a class="button button-primary whatsapp-button" href="${encodeAttribute(wpHref)}" ${externalAttrs()}>Comprar por WhatsApp</a>`);
+    }
+
+    if (wholesaleHref) {
+      parts.push(`<a class="button button-muted wholesale-cta" href="${encodeAttribute(wholesaleHref)}" ${externalAttrs()}>Cotizar mayoreo</a>`);
+    }
+
+    if (isValidHttpUrl(product.linkMercadoPago) && !disabled) {
+      parts.push(`<a class="button button-secondary external-payment-button" href="${encodeAttribute(product.linkMercadoPago)}" ${externalAttrs()}>Pagar con Mercado Pago</a>`);
+    }
+
+    if (isValidHttpUrl(product.linkMercadoLibre)) {
+      parts.push(`<a class="button button-muted external-marketplace-button" href="${encodeAttribute(product.linkMercadoLibre)}" ${externalAttrs()}>Ver en Mercado Libre</a>`);
     }
 
     return parts.join('');
@@ -149,7 +202,8 @@
           </div>
           <h3><a href="${productUrl(product)}">${escapeHTML(product.nombre)}</a></h3>
           <p>${escapeHTML(product.descripcionCorta)}</p>
-          <strong class="price">${escapeHTML(product.precioTexto)}</strong>
+          <strong class="price">Precio por pieza: ${escapeHTML(product.precioTexto)}</strong>
+          ${wholesaleBadge(product)}
           <div class="product-card__actions">
             ${actionButtons(product, site, { compact: true })}
           </div>
@@ -165,7 +219,10 @@
     const current = document.body.dataset.page || '';
     const links = [
       ['index', 'Inicio', 'index.html'],
+      ['videos', 'Videos', 'videos.html'],
       ['catalogo', 'Catálogo', 'catalogo.html'],
+      ['servicios-tecnicos', 'Servicios técnicos', 'servicios-tecnicos.html'],
+      ['mayoreo', 'Mayoreo', 'como-comprar.html#mayoreo'],
       ['como-comprar', 'Cómo comprar', 'como-comprar.html'],
       ['envios', 'Envíos', 'envios.html'],
       ['contacto', 'Contacto', 'contacto.html']
@@ -230,7 +287,10 @@
         </div>
         <div>
           <h2>Navegación</h2>
+          <a href="videos.html">Videos</a>
           <a href="catalogo.html">Catálogo</a>
+          <a href="servicios-tecnicos.html">Servicios técnicos</a>
+          <a href="como-comprar.html#mayoreo">Mayoreo</a>
           <a href="como-comprar.html">Cómo comprar</a>
           <a href="envios.html">Envíos</a>
           <a href="politicas.html">Políticas</a>
@@ -242,8 +302,10 @@
         </div>
         <div>
           <h2>Compra</h2>
+          <span>Venta de productos tecnológicos.</span>
+          <span>Atención por mayoreo bajo cotización.</span>
+          <span>Servicios técnicos de software y hardware.</span>
           <span>${escapeHTML(site.avisoDisponibilidad)}</span>
-          <span>Sitio informativo y catálogo comercial.</span>
         </div>
       </div>
       <div class="footer-bottom">
@@ -269,6 +331,17 @@
     link.setAttribute('aria-label', 'Abrir WhatsApp');
     link.textContent = 'WhatsApp';
     document.body.appendChild(link);
+  }
+
+  function bindWhatsappLinks(site) {
+    document.querySelectorAll('[data-whatsapp-message]').forEach((link) => {
+      const message = link.getAttribute('data-whatsapp-message');
+      const href = whatsappUrl(site, message);
+      if (!href) return;
+      link.href = href;
+      link.target = '_blank';
+      link.rel = 'noopener noreferrer';
+    });
   }
 
   async function renderFeaturedProducts(site) {
@@ -297,6 +370,7 @@
       renderHeader(site);
       renderFooter(site);
       renderFloatingWhatsapp(site);
+      bindWhatsappLinks(site);
       await renderFeaturedProducts(site);
       updateCommonMeta(site);
       document.body.classList.add('is-ready');
@@ -312,11 +386,18 @@
     externalAttrs,
     getProducts,
     getSite,
+    hasWholesale,
+    bindWhatsappLinks,
     isDefined,
+    isValidHttpUrl,
     productCard,
     productUrl,
     ready,
     statusFor,
+    wholesaleBadge,
+    wholesaleMessage,
+    wholesaleText,
+    wholesaleUrl,
     whatsappUrl
   };
 })();

@@ -24,6 +24,32 @@
     `;
   }
 
+  function renderWholesaleDetail(product, site) {
+    if (!app.hasWholesale(product)) return '';
+
+    const wholesaleHref = app.wholesaleUrl(product, site);
+    const minPieces = Number.isFinite(product.cantidadMinimaMayoreo)
+      ? `<span>A partir de ${product.cantidadMinimaMayoreo} piezas</span>`
+      : '<span>Cotiza por volumen</span>';
+    const wholesalePrice = app.isDefined(product.precioMayoreo)
+      ? `<span>Precio por pieza: ${app.escapeHTML(product.precioMayoreo)}</span>`
+      : '<span>Precio mayorista sujeto a cotización</span>';
+
+    return `
+      <section class="wholesale-panel" aria-labelledby="wholesale-title">
+        <span class="eyebrow">Compra por mayoreo</span>
+        <h2 id="wholesale-title">¿Buscas varias piezas de este producto?</h2>
+        <p>Solicita una cotización personalizada. Confirmamos disponibilidad, precio por volumen y opciones de entrega antes de procesar tu pedido.</p>
+        <div class="wholesale-facts">
+          <span>Precio especial por volumen</span>
+          ${minPieces}
+          ${wholesalePrice}
+        </div>
+        ${wholesaleHref ? `<a class="button button-primary wholesale-cta" href="${app.escapeHTML(wholesaleHref)}" ${app.externalAttrs()}>Cotizar mayoreo por WhatsApp</a>` : ''}
+      </section>
+    `;
+  }
+
   function renderGallery(product) {
     const images = product.imagenes?.length ? product.imagenes : [{ src: product.imagenPrincipal, alt: product.nombre }];
     return `
@@ -82,6 +108,7 @@
           <strong class="detail-price">${app.escapeHTML(product.precioTexto)}</strong>
           <p><span class="status-pill ${status.className}">${status.text}</span> ${app.escapeHTML(product.stockTexto)}</p>
           <p>${app.escapeHTML(product.descripcionLarga)}</p>
+          ${renderWholesaleDetail(product, site)}
           <div class="detail-actions">
             ${app.actionButtons(product, site)}
           </div>
