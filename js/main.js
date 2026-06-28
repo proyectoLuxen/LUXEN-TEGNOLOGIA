@@ -166,23 +166,23 @@ Ciudad de entrega:
     const parts = [];
 
     if (compact) {
-      parts.push(`<a class="button button-ghost" href="${productUrl(product)}">Ver detalles</a>`);
+      parts.push(`<a class="button button-detail" href="${productUrl(product)}">Ver detalles</a>`);
     }
 
     if (wpHref) {
-      parts.push(`<a class="button button-primary whatsapp-button" href="${encodeAttribute(wpHref)}" ${externalAttrs()}>Comprar por WhatsApp</a>`);
+      parts.push(`<a class="button button-whatsapp whatsapp-button" href="${encodeAttribute(wpHref)}" ${externalAttrs()}>Comprar por WhatsApp</a>`);
     }
 
     if (wholesaleHref) {
-      parts.push(`<a class="button button-muted wholesale-cta" href="${encodeAttribute(wholesaleHref)}" ${externalAttrs()}>Cotizar mayoreo</a>`);
+      parts.push(`<a class="button button-wholesale wholesale-cta" href="${encodeAttribute(wholesaleHref)}" ${externalAttrs()}>Cotizar mayoreo</a>`);
     }
 
     if (isValidHttpUrl(product.linkMercadoPago) && !disabled) {
-      parts.push(`<a class="button button-secondary external-payment-button" href="${encodeAttribute(product.linkMercadoPago)}" ${externalAttrs()}>Pagar con Mercado Pago</a>`);
+      parts.push(`<a class="button button-payment external-payment-button" href="${encodeAttribute(product.linkMercadoPago)}" ${externalAttrs()}>Pagar con Mercado Pago</a>`);
     }
 
     if (isValidHttpUrl(product.linkMercadoLibre)) {
-      parts.push(`<a class="button button-muted external-marketplace-button" href="${encodeAttribute(product.linkMercadoLibre)}" ${externalAttrs()}>Ver en Mercado Libre</a>`);
+      parts.push(`<a class="button button-marketplace external-marketplace-button" href="${encodeAttribute(product.linkMercadoLibre)}" ${externalAttrs()}>Ver en Mercado Libre</a>`);
     }
 
     return parts.join('');

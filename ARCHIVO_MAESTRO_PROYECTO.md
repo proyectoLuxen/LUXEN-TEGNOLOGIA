@@ -188,7 +188,7 @@ El documento fuente repetía el enlace del kit cargador + cable. Para no mandar 
 Las imágenes públicas están en:
 
 ```text
-assets/images/productos/
+assets/productos/
 ```
 
 Todas las imágenes públicas fueron optimizadas a `.webp`.
@@ -202,7 +202,7 @@ Ninguno.
 Archivo visual destacado:
 
 ```text
-assets/images/productos/hero-productos.webp
+assets/productos/hero-productos.webp
 ```
 
 Sirve como imagen principal del inicio y Open Graph.
@@ -420,7 +420,7 @@ La V3 agrega una sección de contenido para mejorar navegación, confianza y tr�
 
 - Nueva pestaña `Videos`.
 - Página `videos.html`.
-- Video de YouTube como miniatura enlazada para evitar errores de reproductor embebido.
+- Video de YouTube incrustado.
 - Tarjetas tipo blog con temas de compra, mayoreo y soporte.
 - Preguntas frecuentes en formato acordeón.
 - Formulario para enviar preguntas por WhatsApp.
@@ -469,23 +469,3 @@ Cuando existan preguntas reales frecuentes, se pueden convertir en respuestas p�
 - Confirmar el título oficial del video de YouTube.
 - Agregar más videos del canal cuando estén listos.
 - Convertir preguntas reales de clientes en nuevas entradas FAQ.
-
-## Actualización V4 - corrección de video y mejora visual
-
-La V4 corrige el error visual del reproductor de YouTube en `videos.html`.
-
-- Se eliminó el iframe del video principal porque podía mostrar Error 153 al abrir el sitio como archivo local o desde ciertos contextos.
-- Se dejó una miniatura clicable del video con enlace directo a YouTube.
-- Se reforzaron acentos visuales en tarjetas de productos, blog, FAQ y servicios.
-- Las tarjetas de producto ahora muestran Mercado Libre cuando existe enlace válido.
-- Mercado Pago sigue oculto porque no hay enlaces configurados.
-
-### Verificación V4
-
-- `videos.html` no contiene iframe de YouTube.
-- La miniatura del video carga correctamente.
-- `catalogo.html` muestra 8 tarjetas con WhatsApp.
-- `catalogo.html` muestra 7 botones de Mercado Libre.
-- `catalogo.html` muestra 0 botones de Mercado Pago porque no hay enlaces.
-- No hay imágenes de producto faltantes.
-- No se detectaron referencias locales rotas.

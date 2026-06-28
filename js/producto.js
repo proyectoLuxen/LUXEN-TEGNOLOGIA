@@ -45,7 +45,7 @@
           ${minPieces}
           ${wholesalePrice}
         </div>
-        ${wholesaleHref ? `<a class="button button-primary wholesale-cta" href="${app.escapeHTML(wholesaleHref)}" ${app.externalAttrs()}>Cotizar mayoreo por WhatsApp</a>` : ''}
+        ${wholesaleHref ? `<a class="button button-wholesale wholesale-cta" href="${app.escapeHTML(wholesaleHref)}" ${app.externalAttrs()}>Cotizar mayoreo por WhatsApp</a>` : ''}
       </section>
     `;
   }

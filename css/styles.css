@@ -209,24 +209,34 @@ textarea {
   display: flex;
   align-items: flex-end;
   color: #fff;
-  background: url("../assets/images/productos/hero-productos.webp") center / cover no-repeat;
+  overflow: hidden;
+  background: url("../assets/productos/hero-productos.webp") center / cover no-repeat;
+}
+
+.page-main > .hero {
+  width: 100%;
+  max-width: none;
+  margin-inline: 0;
 }
 
 .hero::after {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(17, 24, 32, 0.68);
+  background:
+    linear-gradient(90deg, rgba(17, 24, 32, 0.78) 0%, rgba(17, 24, 32, 0.56) 38%, rgba(17, 24, 32, 0.25) 72%, rgba(17, 24, 32, 0.12) 100%),
+    linear-gradient(0deg, rgba(17, 24, 32, 0.48) 0%, rgba(17, 24, 32, 0.08) 48%, rgba(17, 24, 32, 0.18) 100%);
 }
 
 .hero .section-inner {
   position: relative;
   z-index: 1;
-  padding: 90px 0 76px;
+  padding: 78px 0 56px;
 }
 
 .hero-copy {
   max-width: 660px;
+  text-shadow: 0 2px 18px rgba(0, 0, 0, 0.34);
 }
 
 .eyebrow {
@@ -278,6 +288,70 @@ h1,
   margin-top: 28px;
 }
 
+.hero-product-cues {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+  max-width: 780px;
+  margin-top: 28px;
+}
+
+.hero-cue {
+  min-width: 0;
+  min-height: 86px;
+  display: grid;
+  grid-template-columns: 48px minmax(0, 1fr);
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.26);
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.13);
+  color: #fff;
+  text-decoration: none;
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.16);
+  backdrop-filter: blur(10px);
+}
+
+.hero-cue:hover,
+.hero-cue:focus-visible {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-1px);
+}
+
+.hero-cue__image,
+.hero-cue__mark {
+  width: 48px;
+  height: 48px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 6px;
+  background: #fff;
+  color: var(--color-primary-dark);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.16);
+}
+
+.hero-cue__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-cue__mark {
+  background: var(--color-gold);
+  color: #1d1400;
+  font-weight: 900;
+}
+
+.hero-cue span:last-child {
+  min-width: 0;
+  font-size: 0.88rem;
+  font-weight: 900;
+  line-height: 1.12;
+}
+
 .button {
   min-height: 44px;
   display: inline-flex;
@@ -318,6 +392,38 @@ h1,
 
 .hero .button-ghost {
   background: rgba(255, 255, 255, 0.94);
+}
+
+.button-detail {
+  background: #fff;
+  color: var(--color-ink);
+  border-color: #b9c9d6;
+  box-shadow: inset 0 -3px 0 rgba(47, 128, 237, 0.18);
+}
+
+.button-whatsapp {
+  background: var(--color-primary);
+  color: #fff;
+  box-shadow: 0 10px 22px rgba(0, 122, 77, 0.2);
+}
+
+.button-wholesale {
+  background: var(--color-gold);
+  color: #1d1400;
+  border-color: #bd8114;
+  box-shadow: 0 10px 22px rgba(217, 154, 32, 0.22);
+}
+
+.button-marketplace {
+  background: var(--color-sky);
+  color: #fff;
+  box-shadow: 0 10px 22px rgba(47, 128, 237, 0.2);
+}
+
+.button-payment {
+  background: var(--color-ink);
+  color: #fff;
+  box-shadow: 0 10px 22px rgba(17, 24, 32, 0.2);
 }
 
 .button:hover,
@@ -596,6 +702,7 @@ h1,
 .product-card__actions {
   display: grid;
   grid-template-columns: 1fr;
+  gap: 8px;
 }
 
 .product-card__actions .button {
@@ -1518,16 +1625,43 @@ h1,
   }
 
   .hero {
-    min-height: 580px;
+    min-height: 650px;
     background-position: 59% center;
   }
 
+  .hero::after {
+    background:
+      linear-gradient(180deg, rgba(17, 24, 32, 0.42) 0%, rgba(17, 24, 32, 0.54) 32%, rgba(17, 24, 32, 0.76) 100%),
+      linear-gradient(90deg, rgba(17, 24, 32, 0.2), rgba(17, 24, 32, 0.08));
+  }
+
   .hero .section-inner {
-    padding: 72px 0 56px;
+    padding: 58px 0 44px;
   }
 
   .hero p {
     font-size: 1rem;
+  }
+
+  .hero-product-cues {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    margin-top: 22px;
+  }
+
+  .hero-cue {
+    min-height: 72px;
+    grid-template-columns: 42px minmax(0, 1fr);
+    padding: 8px;
+  }
+
+  .hero-cue__image,
+  .hero-cue__mark {
+    width: 42px;
+    height: 42px;
+  }
+
+  .hero-cue span:last-child {
+    font-size: 0.82rem;
   }
 
   .button,
@@ -1572,9 +1706,7 @@ h1,
   }
 
   .floating-whatsapp {
-    right: 14px;
-    bottom: 14px;
-    min-height: 46px;
+    display: none;
   }
 
   .service-final-cta .button {
