@@ -17,7 +17,7 @@ Nombre: ${name}
 Pregunta:
 ${question}
 
-Me gustaría que la respondieran por WhatsApp o en la seccion de preguntas frecuentes cuando aplique.`;
+Me gustaría recibir la respuesta por WhatsApp.`;
   }
 
   function bindQuestionForm(site) {
@@ -30,18 +30,24 @@ Me gustaría que la respondieran por WhatsApp o en la seccion de preguntas frecu
       const question = valueFor('question-text');
 
       if (!question) {
-        if (feedback) feedback.textContent = 'Escribe tu pregunta para poder enviarla.';
+        if (feedback) feedback.textContent = 'Escriba su pregunta para poder enviarla.';
         return;
       }
 
       const href = app.whatsappUrl(site, questionMessage());
       if (!href) {
-        if (feedback) feedback.textContent = 'El WhatsApp aun no esta configurado.';
+        if (feedback) feedback.textContent = 'El WhatsApp aún no está configurado.';
         return;
       }
 
-      if (feedback) feedback.textContent = 'Abriendo WhatsApp con tu pregunta preparada.';
-      window.open(href, '_blank', 'noopener,noreferrer');
+      if (feedback) feedback.textContent = 'Abriendo WhatsApp con su pregunta lista para enviar.';
+      // Con 'noopener' window.open siempre devuelve null; se abre sin él y se corta la referencia
+      const opened = window.open(href, '_blank');
+      if (opened) {
+        opened.opener = null;
+      } else {
+        window.location.href = href;
+      }
     });
   }
 

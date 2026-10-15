@@ -3,15 +3,28 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Catálogo de tecnología y mayoreo | LUXEN TECNOLOGÍA</title>
-    <meta name="description" content="Catálogo de audífonos, cargadores y cables de LUXEN TECNOLOGÍA con compra por WhatsApp, cotización por mayoreo y enlaces externos disponibles.">
-    <meta property="og:title" content="Catálogo | LUXEN TECNOLOGÍA">
-    <meta property="og:description" content="Explora productos tecnológicos con precios en MXN y confirmación por WhatsApp.">
-    <meta property="og:image" content="assets/productos/hero-productos.webp">
+    <title>Productos de tecnología: audífonos, cargadores y cables | LUXEN TECNOLOGÍA</title>
+    <meta name="description" content="Catálogo de LUXEN TECNOLOGÍA: audífonos inalámbricos, cargadores, cables y accesorios con compra por WhatsApp, venta por mayoreo y envíos a todo México.">
+    <link rel="canonical" href="https://tecnologicaluxen.com/catalogo.html">
     <meta property="og:type" content="website">
-    <link rel="icon" href="assets/logo/favicon.png">
+    <meta property="og:site_name" content="LUXEN TECNOLOGÍA">
+    <meta property="og:locale" content="es_MX">
+    <meta property="og:title" content="Productos de tecnología: audífonos, cargadores y cables | LUXEN TECNOLOGÍA">
+    <meta property="og:description" content="Catálogo de LUXEN TECNOLOGÍA: audífonos inalámbricos, cargadores, cables y accesorios con compra por WhatsApp, venta por mayoreo y envíos a todo México.">
+    <meta property="og:url" content="https://tecnologicaluxen.com/catalogo.html">
+    <meta property="og:image" content="https://tecnologicaluxen.com/assets/og-luxen.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Logotipo de LUXEN TECNOLOGÍA">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="theme-color" content="#007A4D">
+    <link rel="icon" href="favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/logo/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/logo/favicon.png">
+    <link rel="apple-touch-icon" href="assets/logo/apple-touch-icon.png">
+    <link rel="preload" href="assets/fonts/barlow-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/barlow-semibold.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="css/styles.css">
-    <script src="js/data-inline.js" defer></script>
     <script src="js/main.js" defer></script>
     <script src="js/catalogo.js" defer></script>
   </head>
@@ -20,11 +33,11 @@
     <header id="site-header" class="site-header"></header>
 
     <main id="contenido" class="page-main">
-      <section class="catalog-hero">
+      <section class="page-hero">
         <div class="section-inner">
           <span class="eyebrow">Productos</span>
-          <h1>Catálogo</h1>
-          <p>Precios por pieza en MXN con IVA incluido. Confirma disponibilidad, mayoreo y condiciones de entrega antes de pagar.</p>
+          <h1>Productos de tecnología</h1>
+          <p>Audífonos, cargadores, cables y accesorios. Precios por pieza en MXN con IVA incluido; confirme disponibilidad, mayoreo y condiciones de entrega antes de pagar.</p>
         </div>
       </section>
 
@@ -36,7 +49,7 @@
           </div>
           <p id="catalog-count" aria-live="polite"></p>
         </div>
-        <div id="catalog-filters" class="filter-bar" aria-label="Filtrar por categoría"></div>
+        <div id="catalog-filters" class="filter-bar" role="group" aria-label="Filtrar por categoría"></div>
         <div id="catalog-grid" class="product-grid" aria-live="polite"></div>
       </section>
     </main>

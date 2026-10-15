@@ -3,15 +3,28 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Servicios técnicos para computadoras | LUXEN TECNOLOGÍA</title>
-    <meta name="description" content="Diagnóstico, mantenimiento, reparación y optimización de equipos de cómputo en software y hardware con atención por WhatsApp.">
-    <meta property="og:title" content="Servicios técnicos para computadoras | LUXEN TECNOLOGÍA">
-    <meta property="og:description" content="Consulta servicios técnicos de software y hardware para equipos de cómputo.">
-    <meta property="og:image" content="assets/productos/hero-productos.webp">
+    <title>Soporte técnico de cómputo: diagnóstico, mantenimiento y reparación | LUXEN TECNOLOGÍA</title>
+    <meta name="description" content="Soporte técnico para computadoras y laptops: diagnóstico, mantenimiento, formateo, eliminación de malware, ampliación de RAM y SSD. Cotización por WhatsApp.">
+    <link rel="canonical" href="https://tecnologicaluxen.com/servicios-tecnicos.html">
     <meta property="og:type" content="website">
-    <link rel="icon" href="assets/logo/favicon.png">
+    <meta property="og:site_name" content="LUXEN TECNOLOGÍA">
+    <meta property="og:locale" content="es_MX">
+    <meta property="og:title" content="Soporte técnico de cómputo: diagnóstico, mantenimiento y reparación | LUXEN TECNOLOGÍA">
+    <meta property="og:description" content="Soporte técnico para computadoras y laptops: diagnóstico, mantenimiento, formateo, eliminación de malware, ampliación de RAM y SSD. Cotización por WhatsApp.">
+    <meta property="og:url" content="https://tecnologicaluxen.com/servicios-tecnicos.html">
+    <meta property="og:image" content="https://tecnologicaluxen.com/assets/og-luxen.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Logotipo de LUXEN TECNOLOGÍA">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="theme-color" content="#007A4D">
+    <link rel="icon" href="favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/logo/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/logo/favicon.png">
+    <link rel="apple-touch-icon" href="assets/logo/apple-touch-icon.png">
+    <link rel="preload" href="assets/fonts/barlow-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/barlow-semibold.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="css/styles.css">
-    <script src="js/data-inline.js" defer></script>
     <script src="js/main.js" defer></script>
     <script src="js/servicios.js" defer></script>
   </head>
@@ -22,51 +35,34 @@
     <main id="contenido" class="page-main">
       <section class="page-hero service-hero">
         <div class="section-inner">
+          <nav class="breadcrumb" aria-label="Ruta" style="padding-top:0"><a href="servicios.html">Servicios</a><span aria-hidden="true">/</span><span>Soporte técnico de cómputo</span></nav>
           <span class="eyebrow">Soporte técnico</span>
-          <h1>Servicios técnicos para equipos de cómputo</h1>
-          <p>Diagnóstico, mantenimiento, reparación y optimización de equipos de cómputo en software y hardware.</p>
+          <h1>Soporte técnico de cómputo</h1>
+          <p>Diagnóstico, mantenimiento, reparación y optimización de computadoras de escritorio y laptops, en software y hardware.</p>
           <div class="hero-actions">
-            <a id="service-hero-whatsapp" class="button button-primary whatsapp-button" href="contacto.html">Solicitar diagnóstico por WhatsApp</a>
-            <a class="button button-ghost" href="#servicios">Ver servicios</a>
+            <a id="service-hero-whatsapp" class="button button-primary whatsapp-button" href="contacto.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20.5 11.5a8.5 8.5 0 0 1-12.3 7.6L3.5 20.5l1.4-4.4A8.5 8.5 0 1 1 20.5 11.5z"/><path d="M8.5 11.5h.01M12 11.5h.01M15.5 11.5h.01"/></svg>Solicitar diagnóstico por WhatsApp</a>
+            <a class="button button-secondary" href="#servicios-detalle">Ver servicios</a>
           </div>
         </div>
       </section>
 
-      <section id="servicios" class="content-section">
+      <section id="servicios-detalle" class="content-section">
         <div class="section-heading">
           <span class="eyebrow">Servicios</span>
           <h2>Atención técnica para software y hardware</h2>
-          <p>Los servicios se revisan según el equipo, síntomas y disponibilidad. La cotización se confirma por WhatsApp cuando aplique.</p>
+          <p>Los servicios se revisan según el equipo, los síntomas y la disponibilidad. La cotización se confirma por WhatsApp.</p>
         </div>
-        <div id="services-grid" class="service-grid" aria-live="polite"></div>
+        <div id="services-grid" class="services-grid" aria-live="polite"></div>
       </section>
 
-      <section class="content-section service-split">
-        <article class="service-category-card">
-          <span class="service-card__icon" aria-hidden="true">SW</span>
-          <h2>Servicios de software</h2>
-          <ul class="check-list">
-            <li>Instalación y configuración de programas</li>
-            <li>Formateo e instalación de sistema operativo</li>
-            <li>Actualización de controladores</li>
-            <li>Eliminación de malware</li>
-            <li>Optimización de arranque y rendimiento</li>
-            <li>Respaldo de archivos cuando sea posible</li>
-            <li>Configuración básica de impresoras, periféricos y red</li>
-          </ul>
+      <section class="content-section two-column">
+        <article class="panel">
+          <div class="service-detail__head"><span class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="4" y="4.5" width="16" height="11.5" rx="1.5"/><path d="M2 19.5h20"/><circle cx="13.8" cy="8.6" r="1.7"/><path d="m12.6 9.8-3.4 3.4"/></svg></span><h2>Servicios de software</h2></div>
+          <ul class="check-list"><li>Instalación y configuración de programas</li><li>Formateo e instalación de sistema operativo</li><li>Actualización de controladores</li><li>Eliminación de malware</li><li>Optimización de arranque y rendimiento</li><li>Respaldo de archivos cuando sea posible</li><li>Configuración básica de impresoras, periféricos y red</li></ul>
         </article>
-        <article class="service-category-card">
-          <span class="service-card__icon" aria-hidden="true">HW</span>
-          <h2>Servicios de hardware</h2>
-          <ul class="check-list">
-            <li>Limpieza interna</li>
-            <li>Cambio o ampliación de memoria RAM</li>
-            <li>Cambio o instalación de almacenamiento SSD/HDD</li>
-            <li>Revisión de ventilación y temperatura</li>
-            <li>Diagnóstico de componentes</li>
-            <li>Mantenimiento de laptops y computadoras de escritorio</li>
-            <li>Instalación o reemplazo de componentes compatibles</li>
-          </ul>
+        <article class="panel">
+          <div class="service-detail__head"><span class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="4" y="4.5" width="16" height="11.5" rx="1.5"/><path d="M2 19.5h20"/><circle cx="13.8" cy="8.6" r="1.7"/><path d="m12.6 9.8-3.4 3.4"/></svg></span><h2>Servicios de hardware</h2></div>
+          <ul class="check-list"><li>Limpieza interna</li><li>Cambio o ampliación de memoria RAM</li><li>Cambio o instalación de almacenamiento SSD/HDD</li><li>Revisión de ventilación y temperatura</li><li>Diagnóstico de componentes</li><li>Mantenimiento de laptops y computadoras de escritorio</li><li>Instalación o reemplazo de componentes compatibles</li></ul>
         </article>
       </section>
 
@@ -75,30 +71,13 @@
           <span class="eyebrow">Proceso</span>
           <h2>Cómo se atiende una solicitud técnica</h2>
         </div>
-        <div class="service-process">
-          <article class="service-process-step">
-            <span class="step-number">1</span>
-            <p>Cuéntanos qué problema tiene tu equipo.</p>
-          </article>
-          <article class="service-process-step">
-            <span class="step-number">2</span>
-            <p>Comparte modelo, síntomas y fotos si es posible.</p>
-          </article>
-          <article class="service-process-step">
-            <span class="step-number">3</span>
-            <p>Recibe orientación inicial y cotización cuando aplique.</p>
-          </article>
-          <article class="service-process-step">
-            <span class="step-number">4</span>
-            <p>Agenda revisión, entrega o servicio según disponibilidad.</p>
-          </article>
-        </div>
+        <div class="steps-grid"><article class="step-item"><span class="step-number">1</span><p>Cuéntenos qué problema tiene su equipo.</p></article><article class="step-item"><span class="step-number">2</span><p>Comparta modelo, síntomas y fotos si es posible.</p></article><article class="step-item"><span class="step-number">3</span><p>Reciba orientación inicial y cotización cuando aplique.</p></article><article class="step-item"><span class="step-number">4</span><p>Agende revisión, entrega o servicio según disponibilidad.</p></article></div>
       </section>
 
       <section class="content-section notice-band service-final-cta">
-        <h2>¿Tu equipo presenta fallas o está lento?</h2>
-        <p>Solicita una revisión por WhatsApp. La atención se define de acuerdo con los síntomas, el equipo y la disponibilidad.</p>
-        <a id="service-final-whatsapp" class="button button-primary whatsapp-button" href="contacto.html">Solicitar revisión por WhatsApp</a>
+        <h2>¿Su equipo presenta fallas o está lento?</h2>
+        <p>Solicite una revisión por WhatsApp. La atención se define de acuerdo con los síntomas, el equipo y la disponibilidad.</p>
+        <a id="service-final-whatsapp" class="button button-primary whatsapp-button" href="contacto.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20.5 11.5a8.5 8.5 0 0 1-12.3 7.6L3.5 20.5l1.4-4.4A8.5 8.5 0 1 1 20.5 11.5z"/><path d="M8.5 11.5h.01M12 11.5h.01M15.5 11.5h.01"/></svg>Solicitar revisión por WhatsApp</a>
       </section>
     </main>
 

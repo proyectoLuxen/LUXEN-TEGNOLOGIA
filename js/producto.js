@@ -13,14 +13,14 @@
   function renderFicha(ficha) {
     if (!ficha || !Object.keys(ficha).length) return '';
     return `
-      <div class="spec-grid">
+      <dl class="spec-grid">
         ${Object.entries(ficha).map(([label, value]) => `
           <div>
             <dt>${app.escapeHTML(label)}</dt>
             <dd>${app.escapeHTML(value)}</dd>
           </div>
         `).join('')}
-      </div>
+      </dl>
     `;
   }
 
@@ -38,8 +38,8 @@
     return `
       <section class="wholesale-panel" aria-labelledby="wholesale-title">
         <span class="eyebrow">Compra por mayoreo</span>
-        <h2 id="wholesale-title">¿Buscas varias piezas de este producto?</h2>
-        <p>Solicita una cotización personalizada. Confirmamos disponibilidad, precio por volumen y opciones de entrega antes de procesar tu pedido.</p>
+        <h2 id="wholesale-title">¿Busca varias piezas de este producto?</h2>
+        <p>Solicite una cotización personalizada. Confirmamos disponibilidad, precio por volumen y opciones de entrega antes de procesar su pedido.</p>
         <div class="wholesale-facts">
           <span>Precio especial por volumen</span>
           ${minPieces}
@@ -58,9 +58,9 @@
           <img id="gallery-main-image" src="${app.escapeHTML(images[0].src)}" alt="${app.escapeHTML(images[0].alt || product.nombre)}">
         </div>
         ${images.length > 1 ? `
-          <div class="gallery-thumbs" aria-label="Imágenes del producto">
+          <div class="gallery-thumbs" role="group" aria-label="Imágenes del producto">
             ${images.map((image, index) => `
-              <button type="button" class="${index === 0 ? 'is-active' : ''}" data-src="${app.escapeHTML(image.src)}" data-alt="${app.escapeHTML(image.alt || product.nombre)}">
+              <button type="button" class="${index === 0 ? 'is-active' : ''}" aria-label="Ver imagen ${index + 1} de ${images.length}" aria-pressed="${index === 0 ? 'true' : 'false'}" data-src="${app.escapeHTML(image.src)}" data-alt="${app.escapeHTML(image.alt || product.nombre)}">
                 <img src="${app.escapeHTML(image.src)}" alt="" loading="lazy">
               </button>
             `).join('')}
@@ -94,9 +94,9 @@
     root.innerHTML = `
       <nav class="breadcrumb" aria-label="Ruta">
         <a href="index.html">Inicio</a>
-        <span>/</span>
-        <a href="catalogo.html">Catálogo</a>
-        <span>/</span>
+        <span aria-hidden="true">/</span>
+        <a href="catalogo.html">Productos</a>
+        <span aria-hidden="true">/</span>
         <span>${app.escapeHTML(product.nombre)}</span>
       </nav>
       <section class="product-detail">
@@ -143,7 +143,7 @@
       ${related.length ? `
         <section class="content-section">
           <div class="section-heading">
-            <span class="eyebrow">También puede interesarte</span>
+            <span class="eyebrow">También le puede interesar</span>
             <h2>Productos relacionados</h2>
           </div>
           <div class="product-grid product-grid--compact">
@@ -159,8 +159,12 @@
       const image = root.querySelector('#gallery-main-image');
       image.src = button.dataset.src;
       image.alt = button.dataset.alt;
-      root.querySelectorAll('.gallery-thumbs button').forEach((thumb) => thumb.classList.remove('is-active'));
+      root.querySelectorAll('.gallery-thumbs button').forEach((thumb) => {
+        thumb.classList.remove('is-active');
+        thumb.setAttribute('aria-pressed', 'false');
+      });
       button.classList.add('is-active');
+      button.setAttribute('aria-pressed', 'true');
     });
   }
 
@@ -171,7 +175,7 @@
       <section class="empty-panel">
         <h1>Producto no encontrado</h1>
         <p>El producto solicitado no existe en el catálogo actual o el enlace está incompleto.</p>
-        <a class="button button-primary" href="catalogo.html">Volver al catálogo</a>
+        <a class="button button-primary" href="catalogo.html">Ver productos</a>
       </section>
     `;
   }

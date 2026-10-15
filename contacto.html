@@ -3,15 +3,28 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Contacto | Productos, mayoreo y servicios técnicos | LUXEN TECNOLOGÍA</title>
-    <meta name="description" content="Contacto de LUXEN TECNOLOGÍA por WhatsApp Business para compras, mayoreo, servicios técnicos, facturación y seguimiento.">
-    <meta property="og:title" content="Contacto | LUXEN TECNOLOGÍA">
-    <meta property="og:description" content="Atención comercial por WhatsApp Business.">
-    <meta property="og:image" content="assets/productos/hero-productos.webp">
+    <title>Contacto por WhatsApp | LUXEN TECNOLOGÍA</title>
+    <meta name="description" content="Contacte a LUXEN TECNOLOGÍA por WhatsApp para compras, cotizaciones, mayoreo, asesoría tecnológica y servicios técnicos. Atención de 9:00 a 22:00, todos los días.">
+    <link rel="canonical" href="https://tecnologicaluxen.com/contacto.html">
     <meta property="og:type" content="website">
-    <link rel="icon" href="assets/logo/favicon.png">
+    <meta property="og:site_name" content="LUXEN TECNOLOGÍA">
+    <meta property="og:locale" content="es_MX">
+    <meta property="og:title" content="Contacto por WhatsApp | LUXEN TECNOLOGÍA">
+    <meta property="og:description" content="Contacte a LUXEN TECNOLOGÍA por WhatsApp para compras, cotizaciones, mayoreo, asesoría tecnológica y servicios técnicos. Atención de 9:00 a 22:00, todos los días.">
+    <meta property="og:url" content="https://tecnologicaluxen.com/contacto.html">
+    <meta property="og:image" content="https://tecnologicaluxen.com/assets/og-luxen.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Logotipo de LUXEN TECNOLOGÍA">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="theme-color" content="#007A4D">
+    <link rel="icon" href="favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/logo/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/logo/favicon.png">
+    <link rel="apple-touch-icon" href="assets/logo/apple-touch-icon.png">
+    <link rel="preload" href="assets/fonts/barlow-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/barlow-semibold.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="css/styles.css">
-    <script src="js/data-inline.js" defer></script>
     <script src="js/main.js" defer></script>
   </head>
   <body data-page="contacto">
@@ -21,39 +34,51 @@
     <main id="contenido" class="page-main">
       <section class="page-hero">
         <div class="section-inner">
-          <span class="eyebrow">Atención</span>
+          <span class="eyebrow">Contacto</span>
           <h1>Contacto</h1>
-          <p>Atención comercial para compras, cotizaciones por mayoreo, disponibilidad, servicios técnicos, facturación y seguimiento.</p>
+          <p>Escríbanos por WhatsApp para compras, cotizaciones, mayoreo, asesoría o servicios técnicos.</p>
         </div>
       </section>
 
-      <section class="content-section">
-        <div class="contact-grid">
-          <article class="contact-card">
-            <h2>WhatsApp Business</h2>
-            <p>55 1838 7328</p>
-            <a class="button button-primary" href="https://wa.me/525518387328?text=Hola%2C%20me%20interesa%20conocer%20m%C3%A1s%20sobre%20sus%20productos." target="_blank" rel="noopener noreferrer">Abrir WhatsApp</a>
-          </article>
-          <article class="contact-card">
-            <h2>Servicios técnicos</h2>
-            <p>Consulta diagnóstico, mantenimiento, reparación y actualización de equipos de cómputo por WhatsApp.</p>
-            <a class="button button-secondary" href="servicios-tecnicos.html">Ver servicios</a>
-          </article>
-          <article class="contact-card">
-            <h2>Mayoreo</h2>
-            <p>Solicita precio por volumen y confirma disponibilidad antes de procesar un pedido.</p>
-            <a class="button button-muted wholesale-cta" href="contacto.html" data-whatsapp-message="Hola, me interesa conocer sus precios por mayoreo. ¿Me pueden compartir información sobre productos, cantidades mínimas y disponibilidad?">Cotizar mayoreo</a>
-          </article>
-          <article class="contact-card">
-            <h2>Correo</h2>
-            <p>El correo público aún no está configurado para publicación.</p>
-            <p>Por ahora, el canal confirmado de atención es WhatsApp Business.</p>
-          </article>
-          <article class="contact-card">
-            <h2>Horario y zona</h2>
-            <p>El horario de atención se confirma por WhatsApp.</p>
-            <p>No se muestra domicilio particular hasta que sea autorizado expresamente.</p>
-          </article>
+      <section class="section">
+        <div class="section-inner contact-layout">
+          <div class="panel">
+            <h2>Envíenos un mensaje</h2>
+            <p class="note">Llene el formulario y se abrirá WhatsApp con su mensaje listo para enviar. Este formulario no guarda sus datos.</p>
+            <form id="contact-form" class="contact-form" novalidate>
+              <div class="form-field">
+                <label for="nombre">Nombre</label>
+                <input id="nombre" name="nombre" type="text" autocomplete="name" required>
+              </div>
+              <div class="form-field">
+                <label for="servicio">Servicio de interés</label>
+                <select id="servicio" name="servicio" required>
+                  <option value="">Seleccione una opción</option>
+                  <option value="Venta de tecnología y productos electrónicos">Venta de tecnología y productos electrónicos</option><option value="Asesoría tecnológica">Asesoría tecnológica</option><option value="Soporte técnico de cómputo">Soporte técnico de cómputo</option><option value="Redes e internet">Redes e internet</option><option value="Control de acceso y asistencia">Control de acceso y asistencia</option><option value="Credencialización escolar">Credencialización escolar</option><option value="Sistemas para escuelas">Sistemas para escuelas</option>
+                  <option value="Otro">Otro</option>
+                </select>
+              </div>
+              <div class="form-field">
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" rows="5" required aria-describedby="mensaje-ayuda"></textarea>
+                <span id="mensaje-ayuda" class="hint">Por ejemplo: qué necesita, cantidad, modelo del equipo o ciudad.</span>
+              </div>
+              <button class="button button-primary" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20.5 11.5a8.5 8.5 0 0 1-12.3 7.6L3.5 20.5l1.4-4.4A8.5 8.5 0 1 1 20.5 11.5z"/><path d="M8.5 11.5h.01M12 11.5h.01M15.5 11.5h.01"/></svg>Enviar por WhatsApp</button>
+              <p id="contact-feedback" class="form-feedback" aria-live="polite"></p>
+            </form>
+          </div>
+          <aside class="panel panel--soft" aria-label="Datos de contacto">
+            <h2>WhatsApp</h2>
+            <ul class="contact-list">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20.5 11.5a8.5 8.5 0 0 1-12.3 7.6L3.5 20.5l1.4-4.4A8.5 8.5 0 1 1 20.5 11.5z"/><path d="M8.5 11.5h.01M12 11.5h.01M15.5 11.5h.01"/></svg><div><strong data-site-text="whatsappVisible">WhatsApp</strong><span>Compras, cotizaciones y soporte</span></div></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.2 2"/></svg><div><strong>Horario</strong><span data-site-text="horario">9:00 a 22:00, todos los días</span></div></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3.5 11 12 4l8.5 7"/><path d="M5.5 9.5V20h13V9.5"/><path d="M10 20v-5.5h4V20"/></svg><div><strong>Atención</strong><span>A domicilio o en punto de encuentro. No contamos con local físico.</span></div></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2.5 6.5h11v10h-11z"/><path d="M13.5 9.5h4l3.5 3.5v3.5h-7.5"/><circle cx="6.5" cy="18" r="1.8"/><circle cx="17" cy="18" r="1.8"/></svg><div><strong>Envíos</strong><span>A todo México</span></div></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="2.5" y="5" width="19" height="14" rx="2"/><path d="M2.5 9.5h19"/><path d="M6 15h4"/></svg><div><strong>Pagos y factura</strong><span><a href="como-comprar.html#formas-de-pago">Ver formas de pago</a> · Factura disponible</span></div></li>
+            </ul>
+            <a class="button button-primary button-block" href="contacto.html" data-whatsapp-key="mensajeWhatsAppGeneral"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20.5 11.5a8.5 8.5 0 0 1-12.3 7.6L3.5 20.5l1.4-4.4A8.5 8.5 0 1 1 20.5 11.5z"/><path d="M8.5 11.5h.01M12 11.5h.01M15.5 11.5h.01"/></svg>Abrir WhatsApp</a>
+            <div data-social-links style="margin-top:22px"></div>
+          </aside>
         </div>
       </section>
     </main>

@@ -16,8 +16,8 @@
     }
 
     filterShell.innerHTML = `
-      <button class="filter-chip is-active" type="button" data-category="todos">Todos</button>
-      ${categories.map((category) => `<button class="filter-chip" type="button" data-category="${app.escapeHTML(category)}">${app.escapeHTML(category)}</button>`).join('')}
+      <button class="filter-chip is-active" type="button" data-category="todos" aria-pressed="true">Todos</button>
+      ${categories.map((category) => `<button class="filter-chip" type="button" data-category="${app.escapeHTML(category)}" aria-pressed="false">${app.escapeHTML(category)}</button>`).join('')}
     `;
   }
 
@@ -40,15 +40,19 @@
     filters?.addEventListener('click', (event) => {
       const button = event.target.closest('button[data-category]');
       if (!button) return;
-      filters.querySelectorAll('.filter-chip').forEach((chip) => chip.classList.remove('is-active'));
+      filters.querySelectorAll('.filter-chip').forEach((chip) => {
+        chip.classList.remove('is-active');
+        chip.setAttribute('aria-pressed', 'false');
+      });
       button.classList.add('is-active');
+      button.setAttribute('aria-pressed', 'true');
       renderProducts(products, site, button.dataset.category);
     });
   } catch (error) {
     console.error(error);
     const grid = document.getElementById('catalog-grid');
     if (grid) {
-      grid.innerHTML = '<p class="empty-state">No se pudo cargar el catálogo. Revisa los archivos de datos.</p>';
+      grid.innerHTML = '<p class="empty-state">No se pudieron cargar los productos. Intente recargar la página.</p>';
     }
   }
 })();

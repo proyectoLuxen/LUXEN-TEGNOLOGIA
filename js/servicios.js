@@ -64,6 +64,8 @@
     }
   ];
 
+  const checkIcon = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="4" y="4.5" width="16" height="11.5" rx="1.5"/><path d="M2 19.5h20"/><path d="m9 10.2 2.1 2.1 4-4.3"/></svg>';
+
   function serviceMessage(service) {
     return `Hola, necesito información sobre el servicio técnico: ${service.title}.
 
@@ -77,7 +79,7 @@ Ciudad:
   function serviceButton(service, site) {
     const href = app.whatsappUrl(site, serviceMessage(service));
     if (!href) return '';
-    return `<a class="button button-muted whatsapp-button" href="${app.escapeHTML(href)}" ${app.externalAttrs()}>Consultar por WhatsApp</a>`;
+    return `<a class="card-link whatsapp-button" href="${app.escapeHTML(href)}" ${app.externalAttrs()}>Consultar por WhatsApp<span class="visually-hidden">: ${app.escapeHTML(service.title)}</span></a>`;
   }
 
   function renderServices(site) {
@@ -86,7 +88,7 @@ Ciudad:
 
     grid.innerHTML = services.map((service) => `
       <article class="service-card">
-        <span class="service-card__icon" aria-hidden="true">${app.escapeHTML(service.code)}</span>
+        <span class="icon-badge">${checkIcon}</span>
         <h3>${app.escapeHTML(service.title)}</h3>
         <p>${app.escapeHTML(service.description)}</p>
         ${serviceButton(service, site)}
@@ -103,6 +105,7 @@ Ciudad:
       link.rel = 'noopener noreferrer';
     });
   }
+
 
   try {
     const site = await app.getSite();
