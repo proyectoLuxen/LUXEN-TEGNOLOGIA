@@ -159,9 +159,6 @@ Ciudad de entrega:
       parts.push(`<a class="button button-payment external-payment-button" href="${encodeAttribute(product.linkMercadoPago)}" ${externalAttrs()}>Pagar con Mercado Pago</a>`);
     }
 
-    if (isValidHttpUrl(product.linkMercadoLibre)) {
-      parts.push(`<a class="button button-marketplace external-marketplace-button" href="${encodeAttribute(product.linkMercadoLibre)}" ${externalAttrs()}>Ver en Mercado Libre</a>`);
-    }
 
     return parts.join('');
   }

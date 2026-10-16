@@ -335,7 +335,6 @@ ul {
 .button-ghost,
 .button-detail,
 .button-muted,
-.button-marketplace,
 .button-payment {
   border-color: var(--lineas);
   background: #fff;
@@ -345,7 +344,6 @@ ul {
 .button-ghost:hover,
 .button-detail:hover,
 .button-muted:hover,
-.button-marketplace:hover,
 .button-payment:hover {
   border-color: var(--metal);
   color: var(--texto);
