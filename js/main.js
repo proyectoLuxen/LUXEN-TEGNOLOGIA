@@ -306,6 +306,7 @@ Ciudad de entrega:
             <li><a href="como-comprar.html#mayoreo">Mayoreo</a></li>
             <li><a href="envios.html">Envíos</a></li>
             <li><a href="politicas.html">Políticas</a></li>
+            <li><a href="aviso-de-privacidad.html">Aviso de privacidad</a></li>
             <li><a href="videos.html">Videos y preguntas</a></li>
           </ul>
         </div>

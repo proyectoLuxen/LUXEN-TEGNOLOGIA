@@ -1200,6 +1200,105 @@ textarea:focus {
   text-align: center;
 }
 
+/* ---------- Aviso de privacidad ---------- */
+
+.legal-layout {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 40px;
+  align-items: start;
+  padding: 48px 0 72px;
+}
+
+.legal-toc {
+  position: sticky;
+  top: calc(var(--header-h) + 20px);
+  padding: 22px;
+  border-radius: var(--radius-lg);
+  background: var(--fondo);
+}
+
+.legal-toc h2 {
+  font-size: 1.1rem;
+}
+
+.legal-toc ol {
+  display: grid;
+  gap: 6px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0.95rem;
+}
+
+.legal-toc a {
+  color: var(--texto-2);
+  text-decoration: none;
+}
+
+.legal-toc a:hover {
+  color: var(--verde-web-oscuro);
+  text-decoration: underline;
+}
+
+.legal-body {
+  max-width: 780px;
+}
+
+.legal-section {
+  padding: 0 0 28px;
+  margin-bottom: 28px;
+  border-bottom: 1px solid var(--lineas);
+}
+
+.legal-section:last-child {
+  border-bottom: 0;
+}
+
+.legal-section h2 {
+  font-size: clamp(1.3rem, 1.15rem + 0.6vw, 1.6rem);
+}
+
+.legal-section h3 {
+  margin-top: 18px;
+  font-size: 1.125rem;
+}
+
+.legal-section p,
+.legal-list li {
+  color: var(--texto-2);
+}
+
+.legal-section .check-list {
+  margin-bottom: 14px;
+}
+
+.legal-list {
+  display: grid;
+  gap: 6px;
+  margin: 0 0 14px;
+  padding-left: 22px;
+}
+
+mark.pendiente {
+  padding: 0 4px;
+  border-radius: 4px;
+  background: #fbf0d9;
+  color: #7a5200;
+  font-weight: 600;
+}
+
+.aviso-simplificado {
+  margin: 18px 0 0;
+  color: var(--texto-2);
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+.aviso-simplificado a {
+  color: var(--verde-web-oscuro);
+}
+
 /* ---------- Catálogo y productos ---------- */
 
 .catalog-section {
@@ -1900,8 +1999,13 @@ textarea:focus {
   .video-hero__grid,
   .faq-layout,
   .product-detail,
-  .page-layout {
+  .page-layout,
+  .legal-layout {
     grid-template-columns: 1fr;
+  }
+
+  .legal-toc {
+    position: static;
   }
 
   .hero-grid {
@@ -2045,5 +2149,39 @@ textarea:focus {
   *::after {
     transition: none !important;
     animation: none !important;
+  }
+}
+
+/* ---------- Impresión ---------- */
+
+@media print {
+  .floating-whatsapp,
+  .skip-link,
+  .nav-toggle,
+  .site-nav,
+  .nav-whatsapp,
+  .site-footer,
+  .legal-toc {
+    display: none !important;
+  }
+
+  .site-header {
+    position: static;
+    box-shadow: none;
+  }
+
+  .legal-layout {
+    display: block;
+    padding: 16px 0;
+  }
+
+  .legal-section h2,
+  .legal-section h3 {
+    break-after: avoid-page;
+  }
+
+  mark.pendiente {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
   }
 }
