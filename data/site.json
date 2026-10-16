@@ -1,8 +1,8 @@
 {
   "nombreMarca": "LUXEN TECNOLOGÍA",
   "slogan": "Servicios y Ventas de Tecnología",
-  "descripcionCorta": "Empresa de tecnología: venta de productos electrónicos, asesoría y servicios técnicos en cómputo, redes e internet, control de acceso y soluciones para escuelas.",
-  "descripcionLarga": "LUXEN TECNOLOGÍA vende tecnología y productos electrónicos, asesora a sus clientes para elegir el equipo adecuado y presta servicios técnicos de cómputo, redes e internet, control de acceso y asistencia, credencialización escolar y sistemas para escuelas.",
+  "descripcionCorta": "Empresa de tecnología: desarrollo de páginas web, apps y software, venta de productos electrónicos, asesoría y servicios técnicos.",
+  "descripcionLarga": "LUXEN TECNOLOGÍA desarrolla páginas web, apps y software a la medida, vende tecnología y productos electrónicos, y presta asesoría y servicios técnicos de cómputo, redes e internet, control de acceso y asistencia, credencialización escolar y sistemas para escuelas.",
   "ciudad": "PENDIENTE_DEFINIR",
   "pais": "México",
   "whatsappNumero": "525518387328",
@@ -22,6 +22,7 @@
   "favicon": "assets/logo/favicon.png",
   "ogImage": "assets/og-luxen.jpg",
   "mensajeWhatsAppGeneral": "Hola, me interesa recibir información de LUXEN TECNOLOGÍA.",
+  "mensajeWhatsAppProyecto": "Hola, quiero cotizar un proyecto de desarrollo.\n\nTipo (página web, app o sistema):\nPara qué lo necesito:\nFecha deseada:",
   "mensajeWhatsAppAsesoria": "Hola, me gustaría solicitar una asesoría tecnológica.\n\nLo que necesito:\nPara (escuela, negocio o uso personal):\nCiudad:",
   "avisoEnvioCorto": "Consulte cobertura, disponibilidad y costo de envío antes de realizar su pago.",
   "politicaPagoCorto": "Los pedidos se procesan después de confirmar el pago y la disponibilidad.",
